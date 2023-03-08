@@ -14,7 +14,7 @@ desired_cap = {
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_cap)
 
-driver.find_element(AppiumBy.ID, "com.google.android.calculator:id/digit_1").click()
+driver.find_element(AppiumBy.ID, "com.google.android.calculator:id/digit_9").click()
 
 driver.find_element(AppiumBy.ID, "com.google.android.calculator:id/op_add").click()
 
