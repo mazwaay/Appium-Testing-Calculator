@@ -14,14 +14,14 @@ desired_cap = {
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_cap)
 
-#click '1'
-driver.find_element(AppiumBy.ID, 'com.google.android.calculator:id/digit_1').click()
-#click 'plus'
-driver.find_element(AppiumBy.ID, 'com.google.android.calculator:id/op_add').click()
+#click '9'
+driver.find_element(AppiumBy.ID, "com.google.android.calculator:id/digit_9").click()
+#click 'times'
+driver.find_element(AppiumBy.ID, "com.google.android.calculator:id/op_add").click()
 #click '4'
-driver.find_element(AppiumBy.ID, 'com.google.android.calculator:id/digit_4').click()
+driver.find_element(AppiumBy.ID, "com.google.android.calculator:id/digit_4").click()
 #click 'equals'
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, "UiSelector().index(26)").click()
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, "UiSelector().index(14)").click()
 
 time.sleep(2)
 
